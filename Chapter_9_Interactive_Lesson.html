@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 9 Interactive Lesson: Changing Lanes, Turning, and Parking</title>
+<style>
+:root{--navy:#12304a;--blue:#1769aa;--teal:#087f8c;--paper:#f4f7fa;--ink:#172b3a;--muted:#526575;--gold:#f3c969;--line:#d8e1e8}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(125deg,var(--navy),#1769aa);color:#fff;padding:34px 20px 28px}
+.wrap{max-width:980px;margin:auto;padding:0 18px}header .eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.78rem;font-weight:800;color:#cde9f7}
+h1{line-height:1.15;font-size:clamp(2rem,5vw,3.2rem);margin:.35rem 0 .7rem}header p{max-width:760px;margin:0;color:#e8f4fa}
+nav{display:flex;flex-wrap:wrap;gap:8px;padding:18px 0}
+button,.tab{border:0;border-radius:12px;padding:11px 15px;font:inherit;font-weight:750;cursor:pointer}
+.tab{background:#e2ebf2;color:var(--navy)}.tab.active{background:var(--navy);color:white}
+main{padding-bottom:40px}.panel{display:none;background:white;border:1px solid var(--line);border-radius:18px;padding:clamp(18px,4vw,32px);box-shadow:0 8px 28px #17354b0c;margin:8px 0 18px}.panel.active{display:block}
+h2{color:var(--navy);margin-top:0;line-height:1.25}h3{color:var(--teal);margin-bottom:.25rem}
+.callout{border-left:5px solid var(--gold);background:#fff8e6;padding:13px 16px;border-radius:8px;margin:18px 0}
+.steps{counter-reset:step;list-style:none;padding:0;display:grid;gap:10px}.steps li{counter-increment:step;border:1px solid var(--line);border-radius:12px;padding:12px 14px 12px 52px;position:relative}.steps li:before{content:counter(step);position:absolute;left:14px;top:12px;background:#e1f4f5;color:#075b65;font-weight:850;border-radius:50%;width:27px;height:27px;text-align:center;line-height:27px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.mini{border:1px solid var(--line);border-radius:13px;padding:15px;background:#fbfdff}.mini strong{color:var(--navy)}
+.quiz-q{border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}.quiz-q legend{font-weight:800;padding:0 5px}.choice{display:block;margin:8px 0;padding:9px 11px;border-radius:9px;background:#f4f7fa;cursor:pointer}.choice:hover{background:#eaf3f8}.choice input{margin-right:9px}
+.feedback{display:none;margin-top:10px;padding:10px 12px;border-radius:9px}.feedback.good{display:block;background:#e5f7ec;color:#155b35}.feedback.bad{display:block;background:#fff0e7;color:#873e1c}
+.primary{background:var(--blue);color:white}.secondary{background:#e4edf4;color:var(--navy)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+#score{font-weight:800;color:var(--navy);margin-top:14px}.small{font-size:.9rem;color:var(--muted)}footer{padding:22px 0;color:var(--muted);font-size:.88rem}
+@media print{body{background:white}header{background:white;color:#111;padding:10px 0}header p,.eyebrow{color:#333!important}.wrap{max-width:none}.panel{display:block!important;box-shadow:none;break-inside:avoid}nav,.actions{display:none}.quiz-q{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Driver education • Chapter 9</div>
+<h1>Changing Lanes, Turning, and Parking</h1>
+<p>An interactive lesson with short teaching sections, driving scenarios, and a knowledge check. Work through each module, then take the quiz.</p>
+</div></header>
+<main class="wrap">
+<nav aria-label="Lesson sections">
+<button class="tab active" data-panel="lanes">1. Changing lanes</button>
+<button class="tab" data-panel="turning">2. Turning</button>
+<button class="tab" data-panel="turnabouts">3. Turnabouts</button>
+<button class="tab" data-panel="parking">4. Parking</button>
+<button class="tab" data-panel="quiz">Knowledge check</button>
+</nav>
+
+<section class="panel active" id="lanes">
+<h2>1. Changing lanes safely</h2>
+<p>A lane change should be planned and gradual. Search for a safe gap, communicate your intention, check blind zones, and move only when the space is clear.</p>
+<ol class="steps">
+<li><strong>Search.</strong> Check ahead, to both sides, behind you, and in your mirrors. Identify a safe gap.</li>
+<li><strong>Signal.</strong> Let other road users know you intend to move left or right.</li>
+<li><strong>Recheck the blind zone.</strong> Look in the direction of the lane change immediately before moving.</li>
+<li><strong>Move smoothly.</strong> When there is enough space, steer gently into the new lane and adjust speed to match traffic if necessary.</li>
+<li><strong>Finish the maneuver.</strong> Cancel the signal once established in the new lane, then recheck your speed and position.</li>
+</ol>
+<div class="callout"><strong>Remember:</strong> Mirrors alone do not show every area beside or behind your vehicle. Check the blind zone before moving.</div>
+<h3>Common lane-change errors</h3>
+<div class="grid">
+<div class="mini"><strong>Forgetting the signal</strong><br>Other drivers may not know what you plan to do.</div>
+<div class="mini"><strong>Moving too soon</strong><br>Enter only after confirming there is enough space.</div>
+<div class="mini"><strong>Oversteering or slowing unnecessarily</strong><br>Use a gentle, controlled movement and keep traffic flow in mind.</div>
+<div class="mini"><strong>Leaving the signal on</strong><br>Cancel it once your vehicle is established in the lane.</div>
+</div>
+<h3>Quick scenario</h3>
+<p>You signal to change lanes, but a car appears in your blind zone during your final check. What should you do?</p>
+<details><summary><strong>Reveal the safest response</strong></summary><p>Stay in your current lane, allow the vehicle to pass, and try again only after checking for a safe gap.</p></details>
+</section>
+
+<section class="panel" id="turning">
+<h2>2. Turning with control</h2>
+<p>Prepare early so you can focus on the turn itself. Signal, search for people and traffic, choose the proper position, and reduce speed before turning.</p>
+<ol class="steps">
+<li><strong>Plan ahead.</strong> Check signs, signals, lane markings, and the road layout.</li>
+<li><strong>Signal in advance.</strong> The chapter assessment notes that many states require a signal at least 100 feet before a turn in an urban area; follow the law where you drive.</li>
+<li><strong>Position your vehicle correctly.</strong> Move into the appropriate lane or turning position when safe.</li>
+<li><strong>Finish braking before steering into the turn.</strong> Enter at a speed that allows you to maintain control.</li>
+<li><strong>Check the path.</strong> Look for pedestrians, bicyclists, and other road users, and yield when required.</li>
+<li><strong>Complete the turn smoothly.</strong> Stay in the proper lane and check your position as you exit the turn.</li>
+</ol>
+<div class="callout"><strong>Key idea:</strong> Complete your braking before you turn the steering wheel into the turn. Avoid rushing or making abrupt steering movements.</div>
+<h3>Quick scenario</h3>
+<p>You reach the corner faster than expected and have not reduced speed enough. Should you brake hard while sharply turning?</p>
+<details><summary><strong>Reveal the safest response</strong></summary><p>Do not rush the turn. Reduce speed in a controlled way before turning whenever possible, and enter only at a speed that allows control. Keep scanning for people and traffic.</p></details>
+</section>
+
+<section class="panel" id="turnabouts">
+<h2>3. Reversing direction: turnabouts</h2>
+<p>Before choosing a way to turn around, consider traffic density and speed, street layout, visibility, and your line of sight. Use a location that gives you enough space and a clear view.</p>
+<h3>Before any turnabout</h3>
+<ul>
+<li>Check traffic in front, behind, and to both sides.</li>
+<li>Check mirrors and blind zones, and look for pedestrians, bicyclists, and motorcyclists.</li>
+<li>Signal your intention and yield to people who have the right-of-way.</li>
+<li>Move slowly and stop if your intended path is not clear.</li>
+</ul>
+<h3>Backing into a driveway on the right</h3>
+<ol class="steps">
+<li>Select a suitable driveway or alley on your right.</li>
+<li>Check traffic in all directions and check the blind zones.</li>
+<li>Signal right; the chapter describes briefly tapping the brake pedal to alert drivers behind you.</li>
+<li>Stop about 3 feet from and parallel to the curb, with the rear of your vehicle slightly beyond the driveway.</li>
+<li>Shift to Reverse and check traffic again. When clear, look over your right shoulder and back slowly while turning the wheel sharply right.</li>
+<li>Continue checking your surroundings and move slowly. Never assume the path is clear just because it was clear a moment ago.</li>
+</ol>
+<div class="callout"><strong>Safety first:</strong> If you cannot see enough to complete a turnabout safely, choose another location rather than forcing the maneuver.</div>
+</section>
+
+<section class="panel" id="parking">
+<h2>4. Parking and securing the vehicle</h2>
+<p>Parking requires low-speed control, awareness of pedestrians and moving vehicles, attention to signs and signals, and a secure vehicle before you leave.</p>
+<div class="grid">
+<div class="mini"><strong>Entering or leaving a space</strong><br>Move slowly, keep scanning the whole area, and yield to traffic already in the main lane when leaving a parking space.</div>
+<div class="mini"><strong>Use visual references</strong><br>Mirrors can help you judge how far forward to pull into a space. Keep checking around the vehicle.</div>
+<div class="mini"><strong>Signs and signals</strong><br>Follow posted signs, arrows, lights, and parking-area traffic controls.</div>
+<div class="mini"><strong>Watch for movement</strong><br>Assume drivers and pedestrians may not see you. Be ready to stop if someone backs out or steps into your path.</div>
+</div>
+<h3>Parking on a hill</h3>
+<ul>
+<li>Set the parking brake and shift to Park when parking an automatic vehicle.</li>
+<li><strong>Downhill beside a curb:</strong> position the vehicle parallel to the curb, about 6 inches away, then turn the front wheels sharply toward the curb and allow the front tire to rest gently against it.</li>
+<li><strong>Uphill beside a curb:</strong> position the vehicle parallel to the curb, turn the front wheels sharply away from the curb, and allow the vehicle to roll back slowly until the front tire rests against the curb, controlling movement with the brakes.</li>
+<li><strong>No curb:</strong> point the front wheels toward the edge of the road so a rolling vehicle is more likely to move off the road rather than into traffic.</li>
+<li>Consider curb height and shape, and always secure the vehicle before exiting.</li>
+</ul>
+<div class="callout"><strong>Dutch Reach:</strong> Use the hand farthest from the door to open it. This encourages you to turn your body and look for approaching cyclists or traffic before opening the door.</div>
+<h3>Leaving a downhill curbside space</h3>
+<ol class="steps">
+<li>Back up 2–3 feet.</li><li>Turn the front wheels away from the curb.</li><li>Search for traffic approaching from behind and signal.</li><li>When clear, steer into the nearest travel lane, then check behind and adjust speed.</li>
+</ol>
+</section>
+
+<section class="panel" id="quiz">
+<h2>Knowledge check</h2>
+<p>Choose one answer for each question, then select <strong>Check answers</strong> for your score and feedback.</p>
+<form id="quizForm">
+<div class="quiz-q"><fieldset><legend>1. What should you do immediately before moving into another lane?</legend>
+<label class="choice"><input type="radio" name="q1" value="a">Look only in the rearview mirror</label>
+<label class="choice"><input type="radio" name="q1" value="b">Recheck the blind zone in the direction you intend to move</label>
+<label class="choice"><input type="radio" name="q1" value="c">Turn the wheel sharply</label>
+<div class="feedback" id="f1"></div></fieldset></div>
+<div class="quiz-q"><fieldset><legend>2. When should you cancel your turn signal after changing lanes?</legend>
+<label class="choice"><input type="radio" name="q2" value="a">Once your vehicle is established in the new lane</label>
+<label class="choice"><input type="radio" name="q2" value="b">Before checking the blind zone</label>
+<label class="choice"><input type="radio" name="q2" value="c">Only after stopping</label>
+<div class="feedback" id="f2"></div></fieldset></div>
+<div class="quiz-q"><fieldset><legend>3. When preparing to turn, when should you complete your braking?</legend>
+<label class="choice"><input type="radio" name="q3" value="a">After you have turned the steering wheel sharply</label>
+<label class="choice"><input type="radio" name="q3" value="b">While coasting in Neutral</label>
+<label class="choice"><input type="radio" name="q3" value="c">Before turning the steering wheel into the turn</label>
+<div class="feedback" id="f3"></div></fieldset></div>
+<div class="quiz-q"><fieldset><legend>4. Which factors should you consider before choosing a turnabout?</legend>
+<label class="choice"><input type="radio" name="q4" value="a">Only the width of your vehicle</label>
+<label class="choice"><input type="radio" name="q4" value="b">Traffic, street layout, visibility, and line of sight</label>
+<label class="choice"><input type="radio" name="q4" value="c">Only whether there is a driveway</label>
+<div class="feedback" id="f4"></div></fieldset></div>
+<div class="quiz-q"><fieldset><legend>5. When leaving a parking space, whom should you yield to?</legend>
+<label class="choice"><input type="radio" name="q5" value="a">Drivers already traveling in the main lane</label>
+<label class="choice"><input type="radio" name="q5" value="b">No one if your signal is on</label>
+<label class="choice"><input type="radio" name="q5" value="c">Only vehicles behind you</label>
+<div class="feedback" id="f5"></div></fieldset></div>
+<div class="quiz-q"><fieldset><legend>6. When parking downhill beside a curb, which way should the front wheels point?</legend>
+<label class="choice"><input type="radio" name="q6" value="a">Straight ahead</label>
+<label class="choice"><input type="radio" name="q6" value="b">Away from the curb</label>
+<label class="choice"><input type="radio" name="q6" value="c">Toward the curb</label>
+<div class="feedback" id="f6"></div></fieldset></div>
+<div class="quiz-q"><fieldset><legend>7. When parking uphill beside a curb, which way should the front wheels point?</legend>
+<label class="choice"><input type="radio" name="q7" value="a">Toward the curb</label>
+<label class="choice"><input type="radio" name="q7" value="b">Away from the curb</label>
+<label class="choice"><input type="radio" name="q7" value="c">Straight ahead</label>
+<div class="feedback" id="f7"></div></fieldset></div>
+<div class="quiz-q"><fieldset><legend>8. What should you do when leaving a vehicle parked on a hill?</legend>
+<label class="choice"><input type="radio" name="q8" value="a">Leave it in Neutral</label>
+<label class="choice"><input type="radio" name="q8" value="b">Set the parking brake and shift to Park for an automatic</label>
+<label class="choice"><input type="radio" name="q8" value="c">Keep the wheels straight in every situation</label>
+<div class="feedback" id="f8"></div></fieldset></div>
+<div class="quiz-q"><fieldset><legend>9. What does the Dutch Reach help a driver do?</legend>
+<label class="choice"><input type="radio" name="q9" value="a">Open the door while looking away</label>
+<label class="choice"><input type="radio" name="q9" value="b">Exit more quickly</label>
+<label class="choice"><input type="radio" name="q9" value="c">Turn and check for approaching cyclists or traffic before opening the door</label>
+<div class="feedback" id="f9"></div></fieldset></div>
+<div class="quiz-q"><fieldset><legend>10. If the path for a turnabout is not clear, what is the safest choice?</legend>
+<label class="choice"><input type="radio" name="q10" value="a">Move quickly before traffic arrives</label>
+<label class="choice"><input type="radio" name="q10" value="b">Stop and wait, or choose another location</label>
+<label class="choice"><input type="radio" name="q10" value="c">Assume other road users will stop</label>
+<div class="feedback" id="f10"></div></fieldset></div>
+<div class="actions"><button type="button" class="primary" id="checkBtn">Check answers</button><button type="button" class="secondary" id="resetBtn">Try again</button><button type="button" class="secondary" onclick="window.print()">Print lesson</button></div>
+<div id="score" aria-live="polite"></div>
+</form>
+</section>
+<footer>Based on the supplied Chapter 9 slide deck. This lesson is a study aid; follow current traffic laws and your instructor’s guidance.</footer>
+</main>
+<script>
+const answers={
+q1:{a:false,b:true,c:false,why:"Check the blind zone immediately before moving. Mirrors may not show every area beside the vehicle."},
+q2:{a:true,b:false,c:false,why:"Cancel the signal once your vehicle is safely established in the new lane."},
+q3:{a:false,b:false,c:true,why:"The chapter emphasizes completing braking before turning the steering wheel into the turn."},
+q4:{a:false,b:true,c:false,why:"Traffic density and speed, street layout, visibility, and line of sight all matter."},
+q5:{a:true,b:false,c:false,why:"Vehicles leaving parking spaces yield to drivers already in the main lane of traffic."},
+q6:{a:false,b:false,c:true,why:"Downhill beside a curb: turn the front wheels toward the curb."},
+q7:{a:false,b:true,c:false,why:"Uphill beside a curb: turn the front wheels away from the curb."},
+q8:{a:false,b:true,c:false,why:"Set the parking brake and shift an automatic vehicle to Park."},
+q9:{a:false,b:false,c:true,why:"The Dutch Reach encourages you to turn and check for approaching cyclists or traffic before opening the door."},
+q10:{a:false,b:true,c:false,why:"Never force a turnabout when the path is unclear. Wait or choose a safer location."}
+};
+document.querySelectorAll(".tab").forEach(btn=>btn.addEventListener("click",()=>{
+ document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b===btn));
+ document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===btn.dataset.panel));
+}));
+document.getElementById("checkBtn").addEventListener("click",()=>{
+ let score=0,answered=0;
+ Object.entries(answers).forEach(([q,opts],i)=>{
+  const picked=document.querySelector('input[name="'+q+'"]:checked');
+  const fb=document.getElementById("f"+(i+1));
+  fb.className="feedback";
+  if(!picked){fb.textContent="Not answered. "+opts.why;fb.classList.add("bad");return;}
+  answered++;
+  if(opts[picked.value]){score++;fb.textContent="Correct! "+opts.why;fb.classList.add("good");}
+  else{fb.textContent="Not quite. "+opts.why;fb.classList.add("bad");}
+ });
+ document.getElementById("score").textContent="Your score: "+score+"/10 ("+Math.round(score*10)+"%). "+(answered<10?"You answered "+answered+" of 10 questions. ":"")+(score>=8?"Great work!":"Review the feedback and try again.");
+});
+document.getElementById("resetBtn").addEventListener("click",()=>{
+ document.getElementById("quizForm").reset();
+ document.querySelectorAll(".feedback").forEach(f=>{f.className="feedback";f.textContent="";});
+ document.getElementById("score").textContent="";
+});
+</script>
+</body>
+</html>
